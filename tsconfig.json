@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "pretty": true,
+    "sourceMap": false,
+    "module": "ESNext",
+    "target": "ESNext",
+    "declaration": true,
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "useDefineForClassFields": true,
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "allowImportingTsExtensions": true,
+    "allowJs": false,
+    "noEmit": true,
+  },
+  "types": ["node"],
+  "include": ["src/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

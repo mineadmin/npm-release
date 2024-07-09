@@ -1,0 +1,58 @@
+{
+  "name": "@mineadmin/npm-release",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.0.0",
+  "description": "发包工具",
+  "main": "bin/publish.js",
+  "bin": {
+    "publish": "bin/publish.js"
+  },
+  "keywords": [
+    "@mineadmin/npm-release",
+    "typescript"
+  ],
+  "homepage": "https://github.com/mineadmin/npm-release",
+  "license": "MIT",
+  "author": "kanyxmo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mineadmin/npm-release.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint . --fix && prettier --write  \"src/**\"",
+    "typecheck": "tsc --noEmit",
+    "lint:pretty": "pretty-quick --staged",
+    "publish": "esno src/index.ts",
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@esbuild-kit/cjs-loader": "^2.1.0",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^17.0.42",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint": "^8.15.0",
+    "eslint-plugin": "^1.0.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "esno": "^0.16.3",
+    "inquirer": "^9.1.4",
+    "minimist": "^1.2.7",
+    "picocolors": "^1.0.0",
+    "prettier": "^2.7.0",
+    "simple-git": "^3.15.1",
+    "tsup": "^6.5.0",
+    "typescript": "^5.3.3"
+  }
+}
