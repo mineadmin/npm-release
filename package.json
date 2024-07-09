@@ -32,7 +32,7 @@
     "lint": "eslint . --fix && prettier --write  \"src/**\"",
     "typecheck": "tsc --noEmit",
     "lint:pretty": "pretty-quick --staged",
-    "publish": "esno src/index.ts",
+    "publish": "esno src/index.ts"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
@@ -51,7 +51,7 @@
     "minimist": "^1.2.7",
     "picocolors": "^1.0.0",
     "prettier": "^2.7.0",
-    "simple-git": "^3.15.1",
+    "simple-git": "^3.16.0",
     "tsup": "^6.5.0",
     "typescript": "^5.3.3"
   }
